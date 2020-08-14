@@ -1,3 +1,4 @@
+//Doms
 const resultEl = document.getElementById('result');
 const lengthEl = document.getElementById('length');
 const uppercaseEl = document.getElementById('uppercase');
@@ -14,7 +15,7 @@ const randomFunc = {
 	symbol: getRandomSymbol
 }
 
-
+//click event listener
 generate.addEventListener('click', () => {
 	const length = +lengthEl.value;
 	const hasLower = lowercaseEl.checked;
