@@ -35,15 +35,22 @@ function generatePassword(lower, upper, number, symbol, length) {
 	if(typesCount === 0) {
 		return '';
 	}
-	
+	if(lengthEl.value < 8) {
+		window.alert ("Length must be over 8 characters.")
+	}
+	if(lengthEl.value > 128){
+		window.alert("Length must be under 128 characters.")
+	}
+
 	// create a loop
 	for(let i=0; i<length; i+=typesCount) {
 		typesArr.forEach(type => {
-			const funcName = Object.keys(type)[0];
-			generatedPassword += randomFunc[funcName]();
+		const funcName = Object.keys(type)[0];
+		generatedPassword += randomFunc[funcName]();
 		});
 	}
-	
+
+
 	const finalPassword = generatedPassword.slice(0, length);
 	
 	return finalPassword;
