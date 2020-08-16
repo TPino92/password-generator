@@ -5,6 +5,10 @@ Allows the user to generate a random password based on specifications they set:
 -UPPER case  
 -Numbers  
 -Symbols  
+  
+##Screanshot of deployed webpsite  
+<img src="./assets/images/password-generator-ss.png" />  
+
 ##Live website: [https://github.com/TPino92/password-generator]
 ##GitHub Repo: [https://github.com/TPino92/password-generator]  
   
