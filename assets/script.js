@@ -37,9 +37,11 @@ function generatePassword(lower, upper, number, symbol, length) {
 	}
 	if(lengthEl.value < 8) {
 		window.alert ("Length must be over 8 characters.")
+		return '';
 	}
 	if(lengthEl.value > 128){
 		window.alert("Length must be under 128 characters.")
+		return '';
 	}
 
 	// create a loop
